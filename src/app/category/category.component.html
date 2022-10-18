@@ -1,6 +1,3 @@
 <div class="list-group">
-    <a href="" class="list-group-item list-group-item-action active" >Tumu</a>
-    <a href="" class="list-group-item list-group-item-action " >Kara Hayvanlari</a>
-    <a href="" class="list-group-item list-group-item-action " >Deniz Hayvanlari</a>
-    <a href="" class="list-group-item list-group-item-action " >Hava Hayvanlari</a>
+    <a *ngFor="let item of categories" href="" class="list-group-item list-group-item-action ">{{item}}</a>
 </div>

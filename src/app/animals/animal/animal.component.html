@@ -1,1 +1,17 @@
-<p>animal works!</p>
+<div class="card mb-3" *ngFor="let item of animals">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="https://picsum.photos/200/300?random={{item.id}}" class="img-fuild rounded-start" alt="">
+        </div>
+        <div class="col-md-9">
+            <div class="card-body">
+                <h2 class="card-title" >{{item.title}}</h2>
+                <p class="card-text">
+                    {{item.description}}
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, atque.
+                </p>
+                <button class="btn btn-sm btn-outline-success" >Details</button>
+            </div>
+        </div>
+    </div>
+    </div>
