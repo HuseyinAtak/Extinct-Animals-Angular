@@ -1,13 +1,16 @@
-<h1 *ngIf="animals.length>0" class="text-success"> Extinct Animals.</h1>
-<div class="alert alert-warning" *ngIf="animals.length==0">
+<h1 *ngIf="animals.length<0" class="text-success"> Extinct Animals.</h1>
+<div class="alert alert-warning" *ngIf="filteredAnimals.length==0">
     Hayvan Bulunamadi.
 </div>
-<div class="alert alert-warning" *ngIf="animals.length>0">
-{{animals.length}} Animals Listed.
+<div class="alert alert-warning" *ngIf="filteredAnimals.length>0">
+{{filteredAnimals.length}} Animals Listed.
 </div>
 
 <div class="mb-3">
-    <input type="text" class="form-control" [(ngModel)]="filterText"  placeholder="Search.." >
+    <input type="text" class="form-control"
+    [(ngModel)]="filterText" 
+    (ngModelChange)="onInputChange()"
+    placeholder="Search.." >
     <small class="text-muted" *ngIf="filterText">Aradiginiz Kelime: {{filterText}}</small>
 </div>
 
@@ -15,7 +18,7 @@
 
 <ng-template #animalsList>
 
-<div class="card mb-3" *ngFor="let item of animals | animalFilter: filterText ">
+<div class="card mb-3" *ngFor="let item of filteredAnimals">
     <div class="row">
         <div class="col-md-3">
             <img src="https://picsum.photos/200/300?random={{item.id}}" class="img-fuild rounded-start" alt="">
