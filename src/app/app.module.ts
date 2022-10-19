@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CategoryComponent } from './category/category.component';
-import { AnimalsComponent } from './animals/animals.component';
 import { AnimalComponent } from './animals/animal/animal.component';
 import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
 import { SummaryPipe } from './pipes/summary.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,9 @@ import { SummaryPipe } from './pipes/summary.pipe';
     NavbarComponent,
     FooterComponent,
     CategoryComponent,
-    AnimalsComponent,
     AnimalComponent,
     AnimalDetailComponent,
-    SummaryPipe
+    SummaryPipe,
   ],
   imports: [
     BrowserModule,
