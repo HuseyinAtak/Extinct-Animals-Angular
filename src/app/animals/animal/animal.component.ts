@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Animals } from 'src/app/models/animal';
-import { AnimalRepository } from 'src/app/models/animal.repository';
+import { AnimalsRepository } from 'src/app/models/animal.repository';
 
 @Component({
   selector: 'app-animal',
@@ -10,10 +10,10 @@ import { AnimalRepository } from 'src/app/models/animal.repository';
 export class AnimalComponent implements OnInit {
 
   animals: Animals[];
-  animalsRepository:AnimalRepository;
+  animalsRepository:AnimalsRepository;
 
   constructor() {
-    this.animalsRepository = new AnimalRepository();
+    this.animalsRepository = new AnimalsRepository();
     this.animals = this.animalsRepository.getAnimals();
    }
 
