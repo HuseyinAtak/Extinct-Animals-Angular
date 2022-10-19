@@ -9,6 +9,7 @@ import { CategoryComponent } from './category/category.component';
 import { AnimalsComponent } from './animals/animals.component';
 import { AnimalComponent } from './animals/animal/animal.component';
 import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
+import { SummaryPipe } from './pipes/summary.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
     CategoryComponent,
     AnimalsComponent,
     AnimalComponent,
-    AnimalDetailComponent
+    AnimalDetailComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,

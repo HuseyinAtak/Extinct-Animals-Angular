@@ -21,8 +21,7 @@
             <div class="card-body">
                 <h2 class="card-title" >{{item.title}}</h2>
                 <p class="card-text">
-                    {{item.description}}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, atque.
+                    {{item.description | summary : 30}}
                 </p>
                 <button class="btn btn-sm btn-outline-success" >Details</button>
             </div>

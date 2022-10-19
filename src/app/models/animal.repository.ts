@@ -5,9 +5,9 @@ export class AnimalsRepository {
     constructor(){
         this.animals = [
     {id:1,title:"1. Animals",description:"First Animals Description."},
-    {id:2,title:"2. Animals",description:"Second Animals Description."},
-    {id:3,title:"3. Animals",description:"Third Animals Description."},
-    {id:4,title:"4. Animals",description:"Fourth Animals Description."},
+    {id:2,title:"2. Animals",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam numquam reiciendis accusamus! Illum sit deleniti laudantium placeat blanditiis doloremque hic, enim molestiae, perspiciatis dignissimos id excepturi, voluptate numquam quam officiis."},
+    {id:3,title:"3. Animals",description:"ThirLorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam numquam reiciendis accusamus! Illum sit deleniti laudantium placeat blanditiis doloremque hic, enim molestiae, perspiciatis dignissimos id excepturi, voluptate numquam quam officiis.tion."},
+    {id:4,title:"4. Animals",description:"FourtLorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam numquam reiciendis accusamus! Illum sit deleniti laudantium placeat blanditiis doloremque hic, enim molestiae, perspiciatis dignissimos id excepturi, voluptate numquam quam officiis.tion."},
     {id:5,title:"5. Animals",description:"Fifth Animals Description."}
         ];
     }
