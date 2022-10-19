@@ -10,6 +10,7 @@ import { AnimalComponent } from './animals/animal/animal.component';
 import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
 import { SummaryPipe } from './pipes/summary.pipe';
 import { FormsModule } from '@angular/forms';
+import { AnimalFilterPipe } from './pipes/animal-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -20,10 +21,12 @@ import { FormsModule } from '@angular/forms';
     AnimalComponent,
     AnimalDetailComponent,
     SummaryPipe,
+    AnimalFilterPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

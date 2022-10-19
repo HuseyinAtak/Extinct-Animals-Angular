@@ -12,6 +12,8 @@ export class AnimalComponent implements OnInit {
   animals: Animals[];
   animalsRepository:AnimalsRepository;
 
+  filterText:string = "";
+
   constructor() {
     this.animalsRepository = new AnimalsRepository();
     this.animals = this.animalsRepository.getAnimals();
