@@ -30,4 +30,16 @@ export class AnimalComponent implements OnInit {
     a.description.toLowerCase().indexOf(this.filterText.toLowerCase()) !== -1) : this.animals;
   }
 
+addToList($event : any, animal : Animals){
+  if($event.target.classList.contains('btn-outline-primary')){
+    $event.target.innerText = 'Okuma Listesinden Cikar';
+    $event.target.classList.remove('btn-outline-primary');
+    $event.target.classList.add('btn-outline-danger');
+  } else{
+    $event.target.innerText = 'Okuma Listesine Ekle';
+    $event.target.classList.remove('btn-outline-danger');
+    $event.target.classList.add('btn-outline-primary');
+    
+  }
+}
 }

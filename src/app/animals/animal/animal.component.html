@@ -30,6 +30,7 @@
                     {{item.description | summary : 30}}
                 </p>
                 <button class="btn btn-sm btn-outline-success" >Details</button>
+                <button (click)="addToList($event, item)" class="btn btn-sm btn-outline-primary ms-2" >Okuma Listesine Ekle</button>
             </div>
         </div>
     </div>
